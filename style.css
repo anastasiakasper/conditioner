@@ -1,6 +1,5 @@
 @font-face {
-	font-family: 'Proletarsk';
-	src: url('/assets/fonts/Proletarsk.ttf') format('truetype');
+	font-family: 'Helvetica Neue';
 	font-style: normal;
 	font-weight: normal;
 }
@@ -20,7 +19,7 @@ body {
 	max-width: 1000px;
 	margin: 0 auto;
 	background-color: black;
-	font-family: 'Proletarsk';
+	font-family: 'Helvetica Neue';
 	color: white;
 	font-size: 20px;
 }
@@ -357,7 +356,7 @@ body {
 			}
 
 			span {
-				font-family: 'Helvetica';
+				font-family: 'Helvetica Neue';
 				font-weight: 200;
 			}
 		}
@@ -374,7 +373,7 @@ body {
 			}
 
 			span {
-				font-family: 'Helvetica';
+				font-family: 'Helvetica Neue';
 				font-weight: 200;
 			}
 
@@ -395,7 +394,7 @@ body {
 			}
 
 			span {
-				font-family: 'Helvetica';
+				font-family: 'Helvetica Neue';
 				font-weight: 200;
 			}
 
@@ -420,7 +419,7 @@ body {
 			}
 
 			span {
-				font-family: 'Helvetica';
+				font-family: 'Helvetica Neue';
 				font-weight: 200;
 			}
 
@@ -447,7 +446,7 @@ body {
 			}
 
 			span {
-				font-family: 'Helvetica';
+				font-family: 'Helvetica Neue';
 				font-weight: 200;
 			}
 
