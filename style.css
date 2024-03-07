@@ -1,0 +1,568 @@
+@font-face {
+	font-family: 'Proletarsk';
+	src: url('/assets/fonts/Proletarsk.ttf') format('truetype');
+	font-style: normal;
+	font-weight: normal;
+}
+
+*,
+*:before,
+*:after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	height: 100%;
+	max-width: 1000px;
+	margin: 0 auto;
+	background-color: black;
+	font-family: 'Proletarsk';
+	color: white;
+	font-size: 20px;
+}
+
+.header {
+	width: 100%;
+	height: 57px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 16px 0 8px;
+
+	nav {
+		display: flex;
+		align-items: center;
+		min-width: 365px;
+		justify-content: space-around;
+		text-decoration: underline;
+		text-underline-position: under;
+		text-decoration-thickness: 0.01em;
+
+		a {
+			display: flex;
+			align-items: center;
+			justify-content: space-around;
+			color: inherit;
+			text-decoration: none;
+			font-size: 14px;
+
+			img {
+				height: 100%;
+				width: 10px;
+				margin: 4px 0 0 6px;
+				object-fit: cover;
+			}
+		}
+	}
+
+	.header__right {
+		display: flex;
+		align-items: center;
+		min-width: 45px;
+		justify-content: space-around;
+
+		span {
+			font-size: 14px;
+		}
+
+		img {
+			width: 15px;
+		}
+	}
+}
+
+.wrapper {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+
+	.first-frame {
+		min-height: 609px;
+		position: relative;
+		margin: 4px 20px 0 16px;
+		background-image: url('https://i.ibb.co/SsSTpMp/card-background.png');
+		background-size: cover;
+		border-radius: 50px;
+		overflow: hidden;
+
+		.first-frame__left {
+			height: 100%;
+			position: absolute;
+
+			.first-frame__label {
+				width: 487px;
+				margin: 38px 0 0 -4px;
+			}
+
+			.first-frame__price-box {
+				width: 387px;
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				font-family: 'Helvetica Neue';
+				font-weight: 200;
+				margin-bottom: 50px;
+
+				.price-box__price {
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
+					margin-top: 32px;
+					width: 271px;
+					font-weight: 700;
+
+					.button {
+						width: 169px;
+						height: 50px;
+						border-radius: 14px;
+						font-size: 20px;
+						font-weight: 700;
+						color: black;
+						background-color: white;
+					}
+
+					.price__cost {
+						color: #ff00f5;
+					}
+				}
+			}
+		}
+
+		.first-frame__conditioner {
+			width: 608px;
+			position: absolute;
+			bottom: 0;
+			right: 0;
+		}
+	}
+
+	.second-frame {
+		min-height: 376px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+
+		h1 {
+			font-size: 50px;
+			margin: 65px 0 10px 0;
+			font-weight: 400;
+		}
+
+		.second-frame__subtitle {
+			width: 541px;
+			height: 140px;
+			font-family: 'Helvetica Neue';
+			font-size: 24px;
+			font-weight: 200;
+		}
+
+		.second-frame__under-text {
+			display: flex;
+			align-items: center;
+			justify-content: space-around;
+			font-family: 'Helvetica Neue';
+			color: inherit;
+			text-decoration: none;
+			font-size: 20px;
+			text-decoration: underline;
+			text-underline-position: under;
+			text-decoration-thickness: 0.01em;
+
+			img {
+				height: 100%;
+				width: 20px;
+				margin: 4px 0 0 10px;
+				transform: rotate(270deg);
+				object-fit: cover;
+			}
+		}
+	}
+
+	.third-frame {
+		min-height: 666px;
+		position: relative;
+		margin: 4px 20px 0 16px;
+		background-image: url('https://i.ibb.co/PDqvg4R/card-background-second.png');
+		background-size: cover;
+		border-radius: 50px;
+		overflow: hidden;
+
+		.third-frame__left {
+			height: 100%;
+			position: absolute;
+			font-family: 'Helvetica Neue';
+
+			.left__top-box {
+				width: 380px;
+				margin: 38px 0 0 0;
+				display: flex;
+				flex-direction: column;
+
+				span {
+					margin-bottom: 28px;
+					font-weight: 200;
+				}
+			}
+
+			.left__bottom-box {
+				width: 445px;
+				font-size: 22px;
+				font-weight: 200;
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				margin-bottom: 60px;
+			}
+		}
+
+		.third-frame__conditioner {
+			width: 405px;
+			position: absolute;
+			margin: 0 50px 8px 0;
+			bottom: 0;
+			right: 0;
+		}
+	}
+
+	.fourth-frame {
+		min-height: 498px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+
+		h3 {
+			font-size: 30px;
+			margin: 70px 0 4px 0;
+			font-weight: 400;
+		}
+
+		.fourth-frame__subtitle {
+			width: 650px;
+			height: 72px;
+			font-family: 'Helvetica Neue';
+			font-size: 22px;
+			font-weight: 200;
+		}
+
+		.fourth-frame__function-box {
+			display: flex;
+			justify-content: space-around;
+			margin-top: 50px;
+			font-family: 'Helvetica Neue';
+			font-weight: 200;
+
+			.function-box__function {
+				display: flex;
+				min-width: 230px;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+
+				span {
+					max-width: 200px;
+					margin-top: 20px;
+				}
+			}
+
+			.function-box__function:last-child {
+				span {
+					margin-top: 40px;
+				}
+			}
+		}
+	}
+
+	.five-frame {
+		min-height: 568px;
+		position: relative;
+		margin: 0 20px 0 16px;
+		background-image: url('https://i.ibb.co/YWPH50B/card-background-thrid.png');
+		background-size: cover;
+		border-radius: 50px;
+		overflow: hidden;
+
+		.five-frame__right {
+			height: 100%;
+			position: absolute;
+			font-family: 'Helvetica Neue';
+
+			.right__top-box {
+				width: 450px;
+				display: flex;
+				flex-direction: column;
+				margin: 52px 0 0 475px;
+
+				h3 {
+					font-size: 30px;
+					margin-bottom: 8px;
+				}
+
+				span {
+					font-weight: 200;
+				}
+			}
+
+			.right__bottom-box {
+				width: 400px;
+				position: absolute;
+				bottom: 0;
+				right: 0;
+				font-size: 20px;
+				font-weight: 200;
+				margin-bottom: 30px;
+				margin-right: 50px;
+			}
+		}
+
+		.five-frame__conditioner {
+			width: 445px;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+		}
+
+		.five-frame__controller {
+			position: absolute;
+			bottom: 0;
+			right: 0;
+		}
+	}
+
+	.six-frame {
+		min-height: 842px;
+		display: flex;
+		flex-wrap: wrap;
+		margin: 30px 16px 0px 16px;
+
+		article {
+			height: 406px;
+			flex: 1 0 25%;
+			border-radius: 20px;
+		}
+
+		article:nth-child(1) {
+			background-image: url('https://i.ibb.co/m5vJ1Zs/card-background-four.png');
+			padding: 19px 20px 0 14px;
+			order: 1;
+
+			h3 {
+				font-size: 30px;
+				margin-bottom: 8px;
+			}
+
+			span {
+				font-family: 'Helvetica';
+				font-weight: 200;
+			}
+		}
+
+		article:nth-child(2) {
+			background-color: #25282a;
+			margin: 0 1rem 0 1rem;
+			padding: 19px 20px 0 14px;
+			order: 2;
+
+			h3 {
+				font-size: 30px;
+				margin-bottom: 8px;
+			}
+
+			span {
+				font-family: 'Helvetica';
+				font-weight: 200;
+			}
+
+			img {
+				margin: 30px 0 0 20px;
+			}
+		}
+
+		article:nth-child(3) {
+			background-color: #3d4043;
+			padding: 19px 20px 0 14px;
+			position: relative;
+			order: 3;
+
+			h3 {
+				font-size: 30px;
+				margin-bottom: 8px;
+			}
+
+			span {
+				font-family: 'Helvetica';
+				font-weight: 200;
+			}
+
+			img {
+				position: absolute;
+				left: 0;
+				bottom: 0;
+			}
+		}
+
+		article:nth-child(4) {
+			position: relative;
+			flex: 1 0 25%;
+			margin: 1rem 1rem 0 0;
+			padding: 19px 20px 0 14px;
+			background-color: #ff00f5;
+			order: 4;
+
+			h3 {
+				font-size: 30px;
+				margin-bottom: 8px;
+			}
+
+			span {
+				font-family: 'Helvetica';
+				font-weight: 200;
+			}
+
+			img {
+				position: absolute;
+				left: 0;
+				bottom: 0;
+				margin-top: 8px;
+				margin-right: 20px;
+			}
+		}
+
+		article:nth-child(5) {
+			position: relative;
+			flex: 1 0 59%;
+			margin-top: 1rem;
+			padding: 19px 240px 0 14px;
+			background-color: #25282a;
+			order: 5;
+
+			h3 {
+				font-size: 30px;
+				margin-bottom: 8px;
+			}
+
+			span {
+				font-family: 'Helvetica';
+				font-weight: 200;
+			}
+
+			img {
+				position: absolute;
+				right: 0;
+				bottom: 0;
+				margin-bottom: -55px;
+			}
+		}
+	}
+
+	.seven-frame {
+		min-height: 545px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		margin: 70px 20px 0 16px;
+
+		h3 {
+			font-size: 30px;
+			margin-bottom: 8px;
+		}
+
+		span {
+			width: 626px;
+			font-family: 'Helvetica Neue';
+			font-weight: 200;
+			margin-bottom: 24px;
+		}
+
+		.img {
+			width: 100%;
+		}
+	}
+
+	.eight-frame {
+		min-height: 666px;
+		position: relative;
+		margin: 85px 20px 0 16px;
+		background-color: #25282a;
+		border-radius: 50px;
+		overflow: hidden;
+
+		.eight-frame__left {
+			height: 100%;
+			position: absolute;
+			padding: 60px 0 0 40px;
+
+			.eight-frame__label {
+				width: 470px;
+			}
+
+			.eight-frame__price-box {
+				width: 385px;
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				font-family: 'Helvetica Neue';
+				font-weight: 200;
+				margin: 0 0 65px 38px;
+
+				.price-box__price {
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
+					margin-top: 32px;
+					width: 271px;
+					font-weight: 700;
+
+					.button {
+						width: 169px;
+						height: 50px;
+						border-radius: 14px;
+						font-size: 20px;
+						font-weight: 700;
+						color: black;
+						background-color: white;
+					}
+
+					.price__cost {
+						color: #ff00f5;
+					}
+				}
+			}
+		}
+
+		.eight-frame__conditioner {
+			width: 355px;
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			margin-bottom: 38px;
+			margin-right: 55px;
+		}
+	}
+}
+
+.footer {
+	width: 100%;
+	height: 30px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 16px 0 16px 0;
+	padding: 8px 20px 16px 16px;
+
+	span {
+		font-size: 14px;
+	}
+
+	.footer__right {
+		display: flex;
+		align-items: center;
+		min-width: 365px;
+		justify-content: space-around;
+	}
+}
