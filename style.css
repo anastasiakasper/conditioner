@@ -573,6 +573,7 @@ body {
 
           .price__cost {
             color: #ff00f5;
+            font-weight: 700;
           }
         }
       }
